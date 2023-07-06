@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Conversores</title>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <h1>Sistemas de Numeração</h1>
+
+  <section>
+    <div class="binario">
+      <div>
+        <h2>Sistema Binário</h2>
+        <p>O sistema binário é um sistema de numeração que utiliza apenas dois dígitos: 0 e 1. É amplamente utilizado em
+          computação e eletrônica.</p>
+
+        <h3>Exemplos de Conversão:</h3>
+
+        <ul>
+          <li>Decimal: 10 &rarr; Binário: 1010</li>
+          <li>Decimal: 25 &rarr; Binário: 11001</li>
+          <li>Decimal: 7 &rarr; Binário: 111</li>
+        </ul>
+      </div>
+
+
+      <div>
+        <h2>Sistema Decimal</h2>
+        <p>O sistema decimal é um sistema de numeração que utiliza dez dígitos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. É o
+          sistema de numeração mais comum e utilizado no dia a dia.</p>
+
+        <h3>Exemplos de Conversão:</h3>
+
+        <ul>
+          <li>Binário: 1010 &rarr; Decimal: 10</li>
+          <li>Binário: 11001 &rarr; Decimal: 25</li>
+          <li>Binário: 111 &rarr; Decimal: 7</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Sistema Hexadecimal</h2>
+        <p>O sistema hexadecimal é um sistema de numeração que utiliza dezesseis dígitos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+          A, B, C, D, E, F. É frequentemente utilizado em programação e representa números de forma mais compacta.</p>
+
+        <h3>Exemplos de Conversão: </h3>
+
+        <ul>
+          <li>Decimal: 15 &rarr; Hexadecimal: F</li>
+          <li>Decimal: 255 &rarr; Hexadecimal: FF</li>
+          <li>Decimal: 42 &rarr; Hexadecimal: 2A</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+   <section class="binDecHex">
+    <div>
+      <div>
+    <label for="binary">Binário:</label>
+    <input type="text" id="binary" oninput="convert('binary')" />
+
+    <label for="decimal">Decimal:</label>
+    <input type="text" id="decimal" oninput="convert('decimal')" />
+
+    <label for="hexadecimal">Hexadecimal:</label>
+    <input type="text" id="hexadecimal" oninput="convert('hexadecimal')" />
+</div>
+    <div class="resultado">
+        <label>Resultado:</label>
+        <p id="binaryResult"></p>
+        <p id="decimalResult"></p>
+        <p id="hexadecimalResult"></p>
+    </div>
+
+    <button class="copy-button" onclick="copyResult()">Copiar Resultado</button>
+</section>
+
+<section class="decBin">
+  <div>
+    <div>
+    <h1>Conversor Decimal-Binário</h1>
+
+    <label for="decimal">Número decimal:</label>
+    <input type="text" id="decimal">
+    <button class="copy-button" onclick="converterDecBin()">Converter</button>
+
+    <p id="resultadoBinario"></p>
+</div>
+
+<div>
+    <h1>Conversor Binário-Decimal</h1>
+    <label for="binario">Número binário:</label>
+    <input type="text" id="binario">
+    <button class="copy-button" onclick="converterBinDec()">Converter</button>
+
+    <p id="resultadoDecimal"></p>
+</div>
+
+<div>
+    <h1>Conversor Decimal-Hexadecimal</h1>
+    <label for="decimal">Número decimal:</label>
+    <input type="text" id="decimalHex">
+    <button class="copy-button" onclick="converterDecHex()">Converter</button>
+
+    <p id="resultadoHexadecimal"></p>
+</div>
+
+<div>
+    <h1>Conversor Hexadecimal-Decimal</h1>
+    <label for="hexadecimal">Número Hexadecimal:</label>
+    <input type="text" id="hexadecimalDec">
+    <button class="copy-button" onclick="converterHexDec()">Converter</button>
+
+    <p id="resultadoDecimalHex"></p>
+</div>
+</div>
+</section>
+
+
+
+  <footer>
+    <p>Todos os direitos reservados</p>
+  </footer>
+</body>
+
+</html>
