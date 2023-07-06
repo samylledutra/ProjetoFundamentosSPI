@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1200px;
+    padding: 20px;
+    margin-bottom: 20px;
+  
+}
+h2 {
+    color: rgb(0, 73, 73);
+}
+h1 {
+    text-align: center;
+    margin: 5px 0px;
+}
+h3 {
+    color:rgb(5, 49, 49);
+    font-size: 18px;
+    padding: 5px 0px;
+}
+h2, p {
+    padding: 5px ;
+}
+p {
+    line-height: 1.5em;
+    text-align: justify;
+    font-size: 18px;
+
+}
+label {
+    
+    margin-top: 10px;
+}
+
+input {
+    width: 20%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.resultado {
+    margin-top: 10px;
+    width: 200px;
+    padding: 0px 5px;
+    
+}
+
+button {
+    width: 15%;
+    margin: 5px 0px;
+   padding: 5px 0px;
+   cursor: pointer;
+   border: 1px solid black;
+   background-color: rgb(245, 238, 238);
+}
+button:hover{
+    background-color:rgb(241, 34, 34);
+    color: white;
+}
+
+
+.decBin h1 {
+    text-align: justify;
+}
+
+.binario {
+    display: flex;
+  flex-direction: row;
+  padding: 20px 15px;
+}
+.binario > div {
+    padding: 0px 10px;
+   
+}
+.binario ul {
+    padding: 10px 20px;
+    
+}
+
+footer {
+    background-color: black;
+}
+footer p {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
